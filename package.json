@@ -1,0 +1,37 @@
+{
+  "name": "loc4all-filmes",
+  "version": "1.0.0",
+  "description": "Loc4all Filmes - Sistema de locação de filmes",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "node --require 'dotenv/config' --require 'babel-register'",
+    "start": "nodemon --exec npm run babel-node -- ./app.js",
+    "build": "babel src -d dist",
+    "mocha": "mocha --require babel-core/register",
+    "test": "mocha --require babel-core/register --timeout 5000 --recursive"
+  },
+  "repository": {
+	  "url": "git@github.com:tiaghoalves/loc4all-filmes.git",
+	  "type": "git"
+  },
+  "author": "Tiago Alves (stvtiago@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "jsonwebtoken": "^8.2.1",
+    "mysql": "^2.15.0",
+    "restify": "^7.2.0",
+    "restify-cors-middleware": "^1.1.0",
+    "restify-logger": "^2.0.1",
+    "restify-namespace": "^0.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "dotenv": "^5.0.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.17.4",
+    "supertest": "^3.1.0"
+  }
+}

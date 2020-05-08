@@ -1,0 +1,6 @@
+node_modules
+dist
+package-lock.json
+.env
+.editorconfig
+Exercício de Seleção - Desenvolvedor Back-end NODE.pdf
