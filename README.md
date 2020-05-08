@@ -1,5 +1,5 @@
 # Loc4all Filmes
-Sistema de uma locadora de filmes
+API para locação de filmes
 
 ### Usage
 
